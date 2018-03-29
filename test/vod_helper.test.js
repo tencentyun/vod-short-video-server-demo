@@ -5,7 +5,7 @@ const assert = require('assert');
 const VodHelper = require('../utils/vod_helper').VodHelper;
 let vodHelper = null;
 
-let extraOpt = { 'proxy': 'http://dev-proxy.oa.com:8080' };
+let extraOpt = { };
 before(async function () {
     //配置文件加载
     const fs = require('fs');

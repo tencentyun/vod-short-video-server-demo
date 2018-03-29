@@ -51,7 +51,7 @@ async function updateBasicInfo(fileId) {
     let conn = null;
     try {
         conn = await gDataBases["db_voddemo"].getConnection();
-        let data = await gVodHelper.getVideoInfo({ fileId, infoFilter: ['basicInfo'], extraOpt: { 'proxy': 'http://dev-proxy.oa.com:8080' } });
+        let data = await gVodHelper.getVideoInfo({ fileId, infoFilter: ['basicInfo'], extraOpt: { } });
         if(data.code!=0){
             throw data;
         }
